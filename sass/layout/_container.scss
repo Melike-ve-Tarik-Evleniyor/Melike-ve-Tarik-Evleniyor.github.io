@@ -1,0 +1,106 @@
+#container {
+    @include box(65%, 0rem);
+    
+    #greeting {
+        @include box(60%, 0rem);
+        transition: color, 0.5s;
+        
+        h1 {
+            font-size: $font-xl;
+        }
+        
+        &:hover {
+            color: $black;
+        }
+    }
+    
+    hr {
+        border-color: $black;
+    }
+    
+    #invitation {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: color, 0.5s;
+        
+        .invitation-img {
+            width: 55%;
+            align-self: center;
+            text-align: center;
+            
+            img {
+                width: 100%;
+            }
+        }
+        
+        #invitation-text {
+            width: 100%;
+            font-size: $font-l;
+        }
+        
+        &:hover {
+            color: $black;
+        }
+    }
+    
+    #helpers {
+
+        #helper-text {
+            color: $dark-grey;
+            font-size: $font-l;
+        }
+        
+        #helper-guides {
+            display: flex;
+            justify-content: center;
+            letter-spacing: 0.12rem;
+            
+            .helper-guide {
+                display: flex;
+                flex-direction: column;
+                transition: color, 0.5s;
+                
+                .icon {
+                    text-align: center;
+                    width: 4rem;
+                    height: 4rem;
+                }
+                
+                a {
+                    cursor: pointer;
+                    text-decoration: none;
+                    color: $black;
+                    
+                    &:hover {
+                        color: $orange;
+                        transform: scale(1.2);
+                    }
+                }
+                
+                &:hover {
+                    color: $black;
+                }
+            }
+        }
+
+        transition: color, 0.5s;
+    }
+    
+    #navigation {
+        p {
+            word-spacing: -0.25rem;
+            
+            a {
+                    cursor: pointer;
+                    text-decoration: none;
+                    color: $black;
+                    
+                    &:hover {
+                        color: $orange;
+                        transform: scale(1.2);
+                    }
+                }
+        }
+    }
+}
